@@ -56,11 +56,11 @@ public class Main {
         int perf20min = performance*20;
         System.out.println("За 20 минут машина произвела " + perf20min + " штук бутылок");
         int perf24H = performance * 24;
-        System.out.println("За 20 минут машина произвела " + perf24H + " штук бутылок");
+        System.out.println("За сутки машина произвела " + perf24H + " штук бутылок");
         int perf3Days = perf24H * 3;
-        System.out.println("За 20 минут машина произвела " + perf3Days + " штук бутылок");
+        System.out.println("За 3  дня машина произвела " + perf3Days + " штук бутылок");
         int perfMonth = perf24H * 30;
-        System.out.println("За 20 минут машина произвела " + perfMonth + " штук бутылок");
+        System.out.println("За месяц машина произвела " + perfMonth + " штук бутылок");
     }
     public static void task5() {
         System.out.println("Задача 5");
@@ -91,7 +91,7 @@ public class Main {
         short loseWeight500 = 500;
         short dayLoseWeight250 = (short) (loseWeight / loseWeight250);
         short dayLoseWeight500 = (short) (loseWeight / loseWeight500);
-        short midleDay = (short) ((dayLoseWeight250+dayLoseWeight500)/2);
+        float midleDay = (dayLoseWeight250+dayLoseWeight500)/2f;
         System.out.println("Потребуется " + dayLoseWeight250 + " дней для похудения, если терять каждый день 250гр");
         System.out.println("Потребуется " + dayLoseWeight500 + " дней для похудения, если терять каждый день 500гр");
         System.out.println("Потребуется " + midleDay + " дней для похудения, в среднем");
